@@ -25,7 +25,7 @@ const Landing = () => {
     const [taskAdded, setTaskAdded] = useState(false)
     const [taskDeleted, setTaskDeleted] = useState(false)
     const loadTodos = async () => {
-        const response = await axios.get('https://todo-list-api-puce-omega.vercel.app/todo/gettodos', {
+        const response = await axios.get('https://kaushalam-digital-task-1.onrender.com/todo/gettodos', {
             headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}` },
         })
         const { todos, username } = await response.data
@@ -46,7 +46,7 @@ const Landing = () => {
                 title: todo,
                 createdAt: Date.now()
             }
-            const res = await axios.post('https://todo-list-api-puce-omega.vercel.app/todo/createtodo', data, {
+            const res = await axios.post('https://kaushalam-digital-task-1.onrender.com/todo/createtodo', data, {
                 headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}` },
             })
             const response = await res.data
@@ -89,7 +89,7 @@ const Landing = () => {
     }
     const handleDelete = async (id) => {
         try {
-            const res = await axios.delete(`https://todo-list-api-puce-omega.vercel.app/todo/deletetodo/${id}`, {
+            const res = await axios.delete(`https://kaushalam-digital-task-1.onrender.com/todo/deletetodo/${id}`, {
                 headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}` },
             })
             const response = await res.data
@@ -134,7 +134,7 @@ const Landing = () => {
         try {
             const newtodo = window.prompt('Enter new Todo')
             settodo(newtodo)
-            const res = await axios.put(`https://todo-list-api-puce-omega.vercel.app/todo/edittodo/${id}`, {
+            const res = await axios.put(`https://kaushalam-digital-task-1.onrender.com/todo/edittodo/${id}`, {
                 "title": newtodo
             }, {
                 headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}` },
@@ -181,7 +181,7 @@ const Landing = () => {
     const addTask = async (e) => {
         try {
             e.preventDefault()
-            const res = await axios.post(`https://todo-list-api-puce-omega.vercel.app/todo/createtask/${taskid}`, { task: task }, {
+            const res = await axios.post(`https://kaushalam-digital-task-1.onrender.com/todo/createtask/${taskid}`, { task: task }, {
                 headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}` },
             })
             const response = await res.data
@@ -224,7 +224,7 @@ const Landing = () => {
         }
     }
     const handleTaskClick = async (id) => {
-        const res = await axios.get(`https://todo-list-api-puce-omega.vercel.app/todo/gettodo/${id}`, {
+        const res = await axios.get(`https://kaushalam-digital-task-1.onrender.com/todo/gettodo/${id}`, {
             headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}` },
         })
         settasks(res.data.todo.tasks)
@@ -237,7 +237,7 @@ const Landing = () => {
         try {
             e.preventDefault()
             const text = e.target.parentNode.parentNode.firstChild.firstChild.innerText
-            const res = await axios.delete(`https://todo-list-api-puce-omega.vercel.app/todo/deletetask/${taskid}`, {
+            const res = await axios.delete(`https://kaushalam-digital-task-1.onrender.com/todo/deletetask/${taskid}`, {
                 data: { taskString: text },
                 headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}` },
             })
@@ -281,7 +281,7 @@ const Landing = () => {
         }
     }
     const sort = async (n) => {
-        const response = await axios.get('https://todo-list-api-puce-omega.vercel.app/todo/sortTodo', {
+        const response = await axios.get('https://kaushalam-digital-task-1.onrender.com/todo/sortTodo', {
             params: { order: n },
             headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}` },
         })

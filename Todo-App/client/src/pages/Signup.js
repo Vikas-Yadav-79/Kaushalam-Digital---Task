@@ -22,7 +22,7 @@ const Signup = () => {
     }
     const submitdata = async () => {
         try {
-            const res = await axios.post('https://todo-list-api-puce-omega.vercel.app/user/signup', cred)
+            const res = await axios.post('https://kaushalam-digital-task-1.onrender.com/user/signup', cred)
             const response = res.data
             console.log(response)
             if (response.success) {

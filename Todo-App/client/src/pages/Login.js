@@ -21,7 +21,7 @@ const Login = () => {
     }
     const submitdata = async () => {
         try {
-            const res = await axios.post('https://todo-list-api-puce-omega.vercel.app/user/login', cred)
+            const res = await axios.post('https://kaushalam-digital-task-1.onrender.com/user/login', cred)
             const response = await res.data
             if (response.success) {
                 localStorage.setItem("token", response.token)
