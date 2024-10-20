@@ -15,7 +15,7 @@ app.use('/user', user)
 app.use('/todo', todo)
 
 app.use(cors({
-    origin: process.env.FRONTEND_URL || 'https://kaushalam-digital-task-todo-list-7e2bqk9tb.vercel.app', // Use environment variable or fallback URL
+    origin: 'https://kaushalam-digital-task-todo-list-7e2bqk9tb.vercel.app', // Use environment variable or fallback URL
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow specific HTTP methods
     credentials: true, // Allow cookies to be sent with requests
 }));
