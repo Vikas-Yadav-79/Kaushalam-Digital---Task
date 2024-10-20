@@ -15,7 +15,7 @@ app.use('/user', user)
 app.use('/todo', todo)
 
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://kaushalam-digital-task-todo-list-7e2bqk9tb.vercel.app',
 }))
 
 export default app
