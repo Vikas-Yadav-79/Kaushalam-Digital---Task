@@ -106,9 +106,21 @@ Run Backend (in other terminal)
 
 ![image](https://github.com/user-attachments/assets/3f145985-a2ca-4cab-8341-369113ecb240)
 
--Sorted By Oldest Parameter
+- Sorted By Oldest Parameter
 
 ![image](https://github.com/user-attachments/assets/397dbd48-b849-4b05-b5dc-a5763ef6ec7b)
+
+- Deleting Random Task
+- ![image](https://github.com/user-attachments/assets/dd992dec-e401-49b9-9e84-69cf3db90d24)
+
+- Editing Created Task
+- ![image](https://github.com/user-attachments/assets/f48c91fc-b9f8-4bed-86df-18f7ab1c43e2)
+- ![image](https://github.com/user-attachments/assets/6d693ea7-c6f4-4453-ad9d-2c7c111d9274)
+
+
+
+
+  
 
 
 
