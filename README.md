@@ -42,7 +42,7 @@ This is a full-stack to-do list application with authentication, built using Rea
 Clone the project
 
 ```git
-  git clone https://github.com/alokVerma749/Todo-App.git
+  git clone https://github.com/Vikas-Yadav-79/Kaushalam-Digital---Task.git
 ```
 
 Go to the project directory
